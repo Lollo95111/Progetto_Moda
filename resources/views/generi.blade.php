@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -12,9 +11,10 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+  
+//! NAVBAR
 
 
-  <!-- NAVBAR -->
 
   <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
   <div class="container-fluid">
@@ -75,7 +75,7 @@ fill="#000000" stroke="none">
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="{{route('Home')}}">
+        <a class="nav-link active" aria-current="page" href="#">
     <h1 style=" background: rgb(4,4,4);
 background: linear-gradient(90deg, rgba(4,4,4,0.8688725490196079) 0%, rgba(0,0,0,0.6615896358543417) 40%, rgba(0,0,0,0.70640756302521) 100%); -webkit-background-clip: text; color: transparent;">THE GENTLEMAN</h1>
 </a>
@@ -86,23 +86,7 @@ background: linear-gradient(90deg, rgba(4,4,4,0.8688725490196079) 0%, rgba(0,0,0
         <li class="nav-item">
           <a class="nav-link" href="">CONTATTI</a>
         </li>
-
-<!-- CATEGORIE -->
-
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Categorie
-          </a>
-          <ul class="dropdown-menu">
-          @foreach($mostraC as $cat)
-            <li><a class="dropdown-item" href="{{route('Categorie',['categoria' => $cat])}}">{{ $cat }}</a></li>
-            @endforeach
-      </ul>
-
-
-<!-- GENERI -->
-
-<li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Generi
           </a>
@@ -111,32 +95,10 @@ background: linear-gradient(90deg, rgba(4,4,4,0.8688725490196079) 0%, rgba(0,0,0
             <li><a class="dropdown-item" href="{{route('Generi',['genere' => $gen])}}">{{ $gen }}</a></li>
             @endforeach
       </ul>
-
     </div>
   </div>
 </nav>
 
-<br>
-<br>
-<br>
-
-
-
-
-
-<div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="https://static.zara.net/photos///contents/mkt/spots/aw23-beauty-north-shade-finder/subhome-xmedia-32//w/1920/IMAGE-landscape-default-fill-5d4b06d5-5956-467b-acb5-7118443c2d94-default_0.jpg?ts=1691490595800" alt=""></div>
-      <div class="swiper-slide"><img src="https://static.zara.net/photos///contents/mkt/spots/aw23-beauty-north-face/subhome-xmedia-32//w/1920/IMAGE-landscape-default-fill-935aa7e2-2103-4b39-ba70-e621e80a313a-default_0.jpg?ts=1691490540847" alt=""></div>
-      <div class="swiper-slide"><img src="https://static.zara.net/photos///contents/mkt/spots/aw23-beauty-north-lips/subhome-xmedia-31//w/1920/IMAGE-landscape-default-fill-98c3da34-9db9-438c-a9be-5c4885615841-default_0.jpg?ts=1690890948458" alt=""></div>
-      <div class="swiper-slide"><img src="https://static.zara.net/photos///contents/mkt/spots/aw23-north-man-bags/subhome-xmedia-32//w/1920/IMAGE-landscape-fill-41813f53-d043-46c0-9d1c-39fe3019b1a4-default_0.jpg?ts=1691750618487" alt=""></div>
-      <div class="swiper-slide"><img src="https://www.prada.com/content/dam/pradanux/home_page/2023/07/fw23/change_over/man_bags/banner_DT.jpg/_jcr_content/renditions/cq5dam.web.1664.1664.webp" alt=""></div>
-      <div class="swiper-slide"><img src="https://static.zara.net/photos///contents/mkt/spots/aw23-north-woman-1975/subhome-xmedia-32-1975//w/1920/IMAGE-landscape-fill-d563820f-292d-48cd-8578-9275775c2872-default_0.jpg?ts=1691509406582" alt=""></div>
-    </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
-  </div>
 
 
 
@@ -144,18 +106,10 @@ background: linear-gradient(90deg, rgba(4,4,4,0.8688725490196079) 0%, rgba(0,0,0
 
 
 
-
-
-
-
-
-
-
-<!-- CARD -->
 
 <section class="container mt-5" >
 <div class="row" >
-@foreach($cardmostrare as $card)
+@foreach($genCat as $card)
 <div class="col-12 col-md-3 my-3 bordi">
 <div class="card" style="width: 20rem;height: 30rem;">
 <img class="px-2 py-2" style="height:250px;" src="{{ $card['foto'] }}" alt="">
@@ -173,23 +127,29 @@ background: linear-gradient(90deg, rgba(4,4,4,0.8688725490196079) 0%, rgba(0,0,0
 
 
 
-<footer>
-  <div class="social-icons">
-    <i class="fab fa-facebook"></i>
-    <i class="fab fa-twitter"></i>
-    <i class="fab fa-instagram"></i>
-    <p>&copy; 2023 Designed by Lorenzo Ricciardiello. </p>
-  </div>
-
-</footer>
 
 
 
 
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-<script src="/shop.js"></script>
+<script src="/main.js"></script>
   </body>
 </html>

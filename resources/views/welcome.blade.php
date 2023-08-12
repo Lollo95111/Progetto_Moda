@@ -12,7 +12,7 @@
   </head>
   <body>
   
-//! NAVBAR
+<!-- navbar -->
 
 
 
@@ -95,6 +95,21 @@ background: linear-gradient(90deg, rgba(4,4,4,0.8688725490196079) 0%, rgba(0,0,0
             <li><a class="dropdown-item" href="{{route('Categorie',['categoria' => $cat])}}">{{ $cat }}</a></li>
             @endforeach
       </ul>
+
+
+<!-- generi -->
+
+
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Generi
+          </a>
+          <ul class="dropdown-menu">
+          @foreach($mostraG as $gen)
+            <li><a class="dropdown-item" href="{{route('Generi',['genere' => $gen])}}">{{ $gen }}</a></li>
+            @endforeach
+      </ul>
+
     </div>
   </div>
 </nav>
@@ -105,15 +120,15 @@ background: linear-gradient(90deg, rgba(4,4,4,0.8688725490196079) 0%, rgba(0,0,0
 
 
 
-//! HEADER
 
 
 
-<header style="position: relative;">
+
+<header class="head" style="position: relative;">
 <a href="{{route('Shop')}}">
 <h1 style="position: absolute; top: 20%; right: 10%; transform: translate(-50%, -50%); text-align: center;  font-size: 25px; letter-spacing:10px; background: rgb(191,191,191);
 background: linear-gradient(90deg, rgba(191,191,191,0.8688725490196079) 0%, rgba(61,56,56,0.6615896358543417) 40%, rgba(210,205,205,0.70640756302521) 100%); -webkit-background-clip: text; color: transparent;">SCOPRI IL NOSTRO SHOP</h1></a>
-<img style="height: 700px; width:100%" src="https://static.zara.net/photos///contents/mkt/spots/aw23-north-woman-dresses/subhome-xmedia-32-1975//w/1920/IMAGE-landscape-fill-eb15b87a-ce8e-4a9a-b180-8387f436375b-default_0.jpg?ts=1691522058346" alt="">
+
 
 </header>
 

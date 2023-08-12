@@ -21,3 +21,5 @@ Route::get('shop',[newControll::class,'shopping'] )->name('Shop');
 Route::get('/scheda/{id}',[newControll::class,'schedaArt'])->name('Scheda');
 
 Route::get('/categorie/{categoria}',[newControll::class,'categPerNomi'])->name('Categorie');
+
+Route::get('/generi/{genere}',[newControll::class,'categPerGenere'] )->name('Generi');
