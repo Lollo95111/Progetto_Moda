@@ -88,6 +88,16 @@ background: linear-gradient(90deg, rgba(4,4,4,0.8688725490196079) 0%, rgba(0,0,0
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categorie
+          </a>
+          <ul class="dropdown-menu">
+          @foreach($mostraC as $cat)
+            <li><a class="dropdown-item" href="{{route('Categorie',['categoria' => $cat])}}">{{ $cat }}</a></li>
+            @endforeach
+      </ul>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Generi
           </a>
           <ul class="dropdown-menu">

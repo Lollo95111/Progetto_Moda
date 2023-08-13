@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="welcome.css">
   </head>
   <body>
   
@@ -118,19 +118,15 @@ background: linear-gradient(90deg, rgba(4,4,4,0.8688725490196079) 0%, rgba(0,0,0
 
 
 
+<video class="video-bg" src="/pradavideo.mp4" autoplay muted loop></video>
 
+<!-- sezioni -->
 
+<section class="section watch"><h1 class="title" >Scopri i Prodotti Innovativi</h1></section>
 
+<section class="section watch"><h1 class="title" >I Nostri Design Esclusivi</h1></section>
 
-
-
-<header class="head" style="position: relative;">
-<a href="{{route('Shop')}}">
-<h1 style="position: absolute; top: 20%; right: 10%; transform: translate(-50%, -50%); text-align: center;  font-size: 25px; letter-spacing:10px; background: rgb(191,191,191);
-background: linear-gradient(90deg, rgba(191,191,191,0.8688725490196079) 0%, rgba(61,56,56,0.6615896358543417) 40%, rgba(210,205,205,0.70640756302521) 100%); -webkit-background-clip: text; color: transparent;">SCOPRI IL NOSTRO SHOP</h1></a>
-
-
-</header>
+<section class="section watch"><h1 class="title" >Manca Solo Il Tuo Style</h1></section>
 
 
 
@@ -139,76 +135,54 @@ background: linear-gradient(90deg, rgba(191,191,191,0.8688725490196079) 0%, rgba
 
 
 
+<!-- pannello 1-->
 
-<style>
-    html,
-    body {
-      position: relative;
-      height: 100%;
-    }
-
-    body {
-      background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color: #000;
-      margin: 0;
-      padding: 0;
-    }
-
-    .swiper {
-      width: 100%;
-      height: 100%;
-    }
-
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  </style>
-</head>
-
-<body>
-  <!-- Swiper -->
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="https://static.zara.net/photos///2023/I/0/2/p/3057/400/300/2/w/607/3057400300_2_1_1.jpg?ts=1691483159171" alt="" srcset=""></div>
-      <div class="swiper-slide"><img src="https://static.zara.net/photos///2023/I/0/2/p/7200/351/064/2/w/449/7200351064_2_1_1.jpg?ts=1689087953015" alt="" srcset=""></div>
-      <div class="swiper-slide"><img src="https://static.zara.net/photos///2023/I/0/2/p/2688/370/251/2/w/449/2688370251_2_1_1.jpg?ts=1686124867661" alt=""></div>
-      <div class="swiper-slide"><img src="https://static.zara.net/photos///2023/I/0/2/p/5718/023/020/2/w/449/5718023020_2_1_1.jpg?ts=1688470615092" alt=""></div>
-      <div class="swiper-slide"><img src="https://static.zara.net/photos///2023/I/0/2/p/3277/306/800/2/w/449/3277306800_2_1_1.jpg?ts=1685374050754" alt=""></div>
-      <div class="swiper-slide"><img src="https://static.zara.net/photos///2023/I/0/2/p/5638/136/807/2/w/364/5638136807_2_1_1.jpg?ts=1690361359669" alt=""></div>
-      <div class="swiper-slide"><img src="https://static.zara.net/photos///2023/I/0/2/p/6085/377/330/2/w/607/6085377330_2_1_1.jpg?ts=1691483159938" alt=""></div>
-      <div class="swiper-slide"><img src="https://static.zara.net/photos///2023/I/0/2/p/0775/324/251/2/w/534/0775324251_2_4_1.jpg?ts=1691142188083" alt=""></div>
-      
-    </div>
-    <div class="swiper-pagination"></div>
-  </div>
+<div class="panel">
+<div class="container">
+  <p class="watch intro fade-in" >Design</p>
+  <h1 class="watch title-bg fade-in">Stile Giusto <br> Per Ogni Situazione.</h1>
+  <br>
+  <br>
+  <img src="https://www.prada.com/content/dam/pradanux/home_page/2023/07/fw23/change_over/man_bags/banner_MB_3.jpg/_jcr_content/renditions/cq5dam.web.751.751.webp" alt="" class="appleWatch">
+  
+</div>
+</div>
 
 
 
 
 
-  <footer>
-  <div class="social-icons">
-    <i class="fab fa-facebook"></i>
-    <i class="fab fa-twitter"></i>
-    <i class="fab fa-instagram"></i>
-    <p>&copy; 2023 Designed by Lorenzo Ricciardiello. </p>
-  </div>
 
-</footer>
+
+
+
+<!-- pannello 2-->
+
+<div class="panel2">
+<div class="container">
+  <p class="watch intro fade-in" >Design</p>
+  <h1 class="watch title-bg fade-in">Stile Giusto <br> Per Ogni Situazione.</h1>
+  <br>
+  <br>
+  <img src="https://static.zara.net/photos///2023/I/0/1/p/8110/995/800/4/w/948/8110995800_15_1_1.jpg?ts=1691490612012" alt="" class="appleWatch2">
+  
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
 
 
@@ -224,6 +198,6 @@ background: linear-gradient(90deg, rgba(191,191,191,0.8688725490196079) 0%, rgba
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-<script src="/main.js"></script>
+<script src="/welcome.js"></script>
   </body>
 </html>

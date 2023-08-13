@@ -139,7 +139,7 @@ public function schedaArt($id){
 
 if($prodotto['id'] == $id){
 
-    return view('scheda',['mostraC'=> $this->categorie, 'prodotto'=>$prodotto]);
+    return view('scheda',['mostraC'=> $this->categorie, 'prodotto'=>$prodotto,'mostraG'=> $this->genere]);
 }
     }
 
@@ -158,7 +158,7 @@ public function categPerNomi($category){
         }
     }
 
-    return view('categorie',['artCat'=> $artCategory,'mostraC'=> $this->categorie]);
+    return view('categorie',['artCat'=> $artCategory,'mostraC'=> $this->categorie,'mostraG'=> $this->genere]);
 }
 
 
@@ -184,12 +184,45 @@ public function categPerGenere($gender){
 
     
 
-    return view('generi',['genCat'=> $genCategory,'mostraG'=> $this->genere]);
+    return view('generi',['genCat'=> $genCategory,'mostraG'=> $this->genere,'mostraC'=> $this->categorie]);
     
 }
 
 
 
 
+//! FILTRO CATEGORIE PER GENERE
+
+
+
+public function categoryXgen($gender) {
+    $filteredCategories = [];
+
+    foreach ($this->categorie as $category) {
+        $filteredProducts = [];
+
+        foreach ($this->prodotti as $product) {
+            if ($product['genere'] == $gender && $product['categoria'] == $category) {
+                array_push($filteredProducts, $product);
+            }
+        }
+
+        if (!empty($filteredProducts)) {
+            $filteredCategories[$category] = $filteredProducts;
+        }
+    }
+
+    return view('categorie_per_genere', ['genCategories' => $filteredCategories, 'mostraC' => $this->categorie, 'mostraG' => $this->genere]);
+}
+
+
+
+
+
+
+
 
 }
+
+
+

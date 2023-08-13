@@ -1,0 +1,42 @@
+*{
+    font-family: monospace;
+}
+
+
+
+:root{
+    :root{
+        --col1: rgb(12, 12, 12);
+        --col2: rgb(70, 70, 70);
+        --col3:  rgb(197, 195, 195);
+     }
+    
+}
+
+
+.bg-1{
+    background-color: var(--col1) !important;
+}
+
+.bg-2{
+    background-color: var(--col2) !important;
+}
+
+.bg-3{
+    background-color: var(--col3) !important;
+}
+
+
+.navbar-blur{
+    backdrop-filter: blur(9px) saturate(0.8);
+    
+}
+
+
+
+
+
+
+
+
+

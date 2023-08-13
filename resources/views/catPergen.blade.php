@@ -1,19 +1,22 @@
-
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
-
   </head>
   <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  
+//! NAVBAR
+
+
+
+  <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"><svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="30px" height="30px" viewBox="0 0 1280.000000 1280.000000"
@@ -72,7 +75,7 @@ fill="#000000" stroke="none">
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="{{route('Home')}}">
+        <a class="nav-link active" aria-current="page" href="#">
     <h1 style=" background: rgb(4,4,4);
 background: linear-gradient(90deg, rgba(4,4,4,0.8688725490196079) 0%, rgba(0,0,0,0.6615896358543417) 40%, rgba(0,0,0,0.70640756302521) 100%); -webkit-background-clip: text; color: transparent;">THE GENTLEMAN</h1>
 </a>
@@ -83,6 +86,7 @@ background: linear-gradient(90deg, rgba(4,4,4,0.8688725490196079) 0%, rgba(0,0,0
         <li class="nav-item">
           <a class="nav-link" href="">CONTATTI</a>
         </li>
+
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Categorie
@@ -107,9 +111,16 @@ background: linear-gradient(90deg, rgba(4,4,4,0.8688725490196079) 0%, rgba(0,0,0
 </nav>
 
 
+
+
+
+
+
+
+
 <section class="container mt-5" >
 <div class="row" >
-@foreach($artCat as $card)
+@foreach($genCategories as $card)
 <div class="col-12 col-md-3 my-3 bordi">
 <div class="card" style="width: 20rem;height: 30rem;">
 <img class="px-2 py-2" style="height:250px;" src="{{ $card['foto'] }}" alt="">
@@ -123,6 +134,21 @@ background: linear-gradient(90deg, rgba(4,4,4,0.8688725490196079) 0%, rgba(0,0,0
 @endforeach
 </div>
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

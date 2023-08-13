@@ -1,0 +1,203 @@
+*{
+    font-family: monospace;
+}
+
+
+
+:root{
+    :root{
+        --col1: rgb(12, 12, 12);
+        --col2: rgb(70, 70, 70);
+        --col3:  rgb(197, 195, 195);
+     }
+    
+}
+
+
+.bg-1{
+    background-color: var(--col1) !important;
+}
+
+.bg-2{
+    background-color: var(--col2) !important;
+}
+
+.bg-3{
+    background-color: var(--col3) !important;
+}
+
+
+
+
+
+
+
+
+.navbar-blur{
+    backdrop-filter: blur(9px) saturate(0.8);
+    
+}
+
+
+
+
+    
+     
+    
+    
+    
+    
+      .video-bg{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        opacity: 0.5;
+        z-index: 0;
+      }
+    
+    
+      .section{
+        
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 100vh;
+    
+      }
+    
+      .title{
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin-right: 25%;
+        transform: scale(1);
+        transition: all 1s cubic-bezier(.215, .61, .355, 1);
+      opacity: 0;
+      }
+    
+    
+    
+      .section.in-page .title{
+        transform: scale(1.2);
+      opacity: 1;
+      }
+    
+
+
+
+
+
+
+
+
+
+
+
+/* pannello 1 */
+
+
+
+
+.panel{
+    height: auto;
+    width: 100%;
+    background:rgba(255, 254, 254, 0.86);
+    position: relative;
+    z-index: 2;
+    color: #000;
+    display: flex;
+    justify-content: center;
+  align-items: center;
+  }
+.container{
+  width: 100%;max-width: 1000px;padding: 10% 10% 0% 10%;
+}
+
+
+.intro{
+font-size: 20px;
+}
+.title-bg{
+  font-size: 3rem; font-family: monospace;
+}
+
+.fade-in{
+  opacity: 0;
+  transform: translateY(20vh);
+  transition: all 1s cubic-bezier(.215, .61, .355, 1);
+}
+.fade-in.in-page{
+  opacity: 1;
+  transform: translateY(0vh);
+}
+
+
+.appleWatch{
+  width: 40vw;
+  height: 50vw;
+  position: relative;
+  left: -20vw;
+  display: block;
+}
+
+
+
+
+
+/* pannello 2 */
+
+
+
+
+.panel2{
+  height: auto;
+  width: 100%;
+  background:rgba(255, 255, 255, 0.836);
+  position: relative;
+  z-index: 2;
+  color: #000;
+  display: flex;
+  justify-content: center;
+align-items: center;
+}
+.container{
+width: 100%;max-width: 1000px;padding: 10% 10% 0% 10%;
+}
+
+
+.intro{
+font-size: 20px;
+}
+.title-bg{
+font-size: 3rem; font-family: monospace;
+}
+
+.fade-in{
+opacity: 0;
+transform: translateY(20vh);
+transition: all 1s cubic-bezier(.215, .61, .355, 1);
+}
+.fade-in.in-page{
+opacity: 1;
+transform: translateY(0vh);
+}
+
+
+.appleWatch2{
+
+position: relative;
+display: block;
+}
+
+
+
+

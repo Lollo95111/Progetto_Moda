@@ -52,6 +52,9 @@
 
 }
 
+
+
+
 .navbar-blur{
     backdrop-filter: blur(9px) saturate(0.8);
     
@@ -62,59 +65,8 @@
 
 
 
-.head{
-    height: 120vh;
-    background-image: url('https://static.zara.net/photos///contents/mkt/spots/aw23-north-woman-dresses/subhome-xmedia-32-1975//w/1920/IMAGE-landscape-fill-eb15b87a-ce8e-4a9a-b180-8387f436375b-default_0.jpg?ts=1691522058346');
-    background-position: center;
-        background-size: auto;
-        background-repeat: no-repeat;
-    animation-name: hed ;
-        animation-iteration-count: infinite;
-        animation-duration: 20s;
-        animation-direction: alternate;
-        animation-timing-function: linear;
-    }
-
-    @keyframes hed {
-        0% {background-position: left;};
-        100%{background-position: right;};
-    }
 
 
-
-
-
-    .swiper {
-        width: 100%;
-        height: 100%;
-      }
-  
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-  
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    
-    
-    
-    
-   
-    
-    
-    
-    
-    
-    
 
 
 
