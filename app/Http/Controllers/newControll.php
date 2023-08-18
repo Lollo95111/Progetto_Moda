@@ -195,7 +195,7 @@ public function categPerGenere($gender){
 
 
 
-public function categoryXgen($gender) {
+public function categoryXgen($gender, $category) {
     $filteredCategories = [];
 
     foreach ($this->categorie as $category) {
@@ -212,7 +212,7 @@ public function categoryXgen($gender) {
         }
     }
 
-    return view('categorie_per_genere', ['genCategories' => $filteredCategories, 'mostraC' => $this->categorie, 'mostraG' => $this->genere]);
+    return view('catPergen', ['genCategories' => $filteredCategories, 'mostraC' => $this->categorie, 'mostraG' => $this->genere]);
 }
 
 

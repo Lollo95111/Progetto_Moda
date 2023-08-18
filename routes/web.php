@@ -24,5 +24,9 @@ Route::get('/categorie/{categoria}',[newControll::class,'categPerNomi'])->name('
 
 Route::get('/generi/{genere}',[newControll::class,'categPerGenere'] )->name('Generi');
 
-Route::get('/catPergen/{genere}', [newControll::class, 'categoryXgen'])->name('catXgen');
+
+
+
+Route::get('/catPergen/{gender}/{category}', [newControll::class, 'categoryXgen'])->name('catXgen');
+
 
