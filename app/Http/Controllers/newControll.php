@@ -110,6 +110,16 @@ class newControll extends Controller
         'pantaloni'
    ];
 
+
+   public $saldi = [
+    [
+        "foto"=> "https://www.prada.com/content/dam/pradabkg_products/S/SPR/SPR09Z/E1ABF05S0/SPR09Z_E1AB_F05S0_C_054_SLF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.800.800.jpg"
+    ]
+    ];
+
+
+
+
    //!CATEGORIE  GENERI/WELCOME
 
     public function welcome(){
@@ -126,7 +136,8 @@ public function shopping(){
 return view('shop', ['cardmostrare'=> $this->prodotti,
 
 'mostraC'=> $this->categorie,
-'mostraG'=> $this->genere
+'mostraG'=> $this->genere,
+'mostraSaldi'=> $this->saldi
 ]
 );
 }

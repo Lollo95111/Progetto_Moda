@@ -130,7 +130,7 @@ background: linear-gradient(90deg, rgba(4,4,4,0.8688725490196079) 0%, rgba(0,0,0
       <div class="swiper-slide"><img src="https://static.zara.net/photos///contents/mkt/spots/aw23-beauty-north-face/subhome-xmedia-32//w/1920/IMAGE-landscape-default-fill-935aa7e2-2103-4b39-ba70-e621e80a313a-default_0.jpg?ts=1691490540847" alt=""></div>
       <div class="swiper-slide"><img src="https://static.zara.net/photos///contents/mkt/spots/aw23-beauty-north-lips/subhome-xmedia-31//w/1920/IMAGE-landscape-default-fill-98c3da34-9db9-438c-a9be-5c4885615841-default_0.jpg?ts=1690890948458" alt=""></div>
       <div class="swiper-slide"><img src="https://static.zara.net/photos///contents/mkt/spots/aw23-north-man-bags/subhome-xmedia-32//w/1920/IMAGE-landscape-fill-41813f53-d043-46c0-9d1c-39fe3019b1a4-default_0.jpg?ts=1691750618487" alt=""></div>
-      <div class="swiper-slide"><img src="https://www.prada.com/content/dam/pradanux/home_page/2023/07/fw23/change_over/man_bags/banner_DT.jpg/_jcr_content/renditions/cq5dam.web.1664.1664.webp" alt=""></div>
+      <div class="swiper-slide"><img src="https://static.zara.net/photos///contents/mkt/spots/aw23-north-woman-nails/subhome-xmedia-33//w/1920/IMAGE-landscape-fill-910d5c3f-999c-43bc-b214-a8fea4fdc185-default_0.jpg?ts=1692027006626" alt=""></div>
       <div class="swiper-slide"><img src="https://static.zara.net/photos///contents/mkt/spots/aw23-north-woman-1975/subhome-xmedia-32-1975//w/1920/IMAGE-landscape-fill-d563820f-292d-48cd-8578-9275775c2872-default_0.jpg?ts=1691509406582" alt=""></div>
     </div>
     <div class="swiper-button-next"></div>
@@ -169,6 +169,33 @@ background: linear-gradient(90deg, rgba(4,4,4,0.8688725490196079) 0%, rgba(0,0,0
 @endforeach
 </div>
 </section>
+
+
+
+
+
+<!-- SLIDE -->
+
+<div class="container-fluid mainContainer my-5">
+
+<div style="background-image: url(1.jpg);"></div>
+<div style="background-image: url(2.jpg);"></div>
+<div style="background-image: url(3.jpg);"></div>
+<div style="background-image: url(4.jpg);"></div>
+<div style="background-image: url(5.jpg);"></div>
+<div style="background-image: url(6.jpg);"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
