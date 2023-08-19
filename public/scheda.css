@@ -18,19 +18,8 @@
     background-color: var(--col1) !important;
 }
 
-.bg-2{
-    background-color: var(--col2) !important;
-}
-
-.bg-3{
-    background-color: var(--col3) !important;
-}
 
 
-.navbar-blur{
-    backdrop-filter: blur(9px) saturate(0.8);
-    
-}
 
 
 

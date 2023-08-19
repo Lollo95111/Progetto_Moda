@@ -111,10 +111,51 @@ class newControll extends Controller
    ];
 
 
-   public $saldi = [
+   public $banner = [
+    
+
     [
-        "foto"=> "https://www.prada.com/content/dam/pradabkg_products/S/SPR/SPR09Z/E1ABF05S0/SPR09Z_E1AB_F05S0_C_054_SLF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.800.800.jpg"
-    ]
+        "id"=> 1,
+        "nome" => "Occhiali Prada Symbole",
+        "prezzo" => "380$",
+        "materiali" => "",
+        "categoria"=> "accessori",
+        "foto"=> "https://static.zara.net/photos///contents/mkt/spots/aw23-beauty-north-shade-finder/subhome-xmedia-32//w/1920/IMAGE-landscape-default-fill-5d4b06d5-5956-467b-acb5-7118443c2d94-default_0.jpg?ts=1691490595800",
+        "genere"=> "uomo"
+    ],
+       
+    [
+        "id"=> 2,
+        "nome" => "Occhiali Prada Symbole",
+        "prezzo" => "380$",
+        "materiali" => "",
+        "categoria"=> "accessori",
+        "foto"=> "https://static.zara.net/photos///contents/mkt/spots/aw23-beauty-north-face/subhome-xmedia-32//w/1920/IMAGE-landscape-default-fill-935aa7e2-2103-4b39-ba70-e621e80a313a-default_0.jpg?ts=1691490540847",
+        "genere"=> "uomo"
+    ],
+
+    [
+        "id"=> 3,
+        "nome" => "Occhiali Prada Symbole",
+        "prezzo" => "380$",
+        "materiali" => "",
+        "categoria"=> "accessori",
+        "foto"=> "https://static.zara.net/photos///contents/mkt/spots/aw23-north-woman-nails/subhome-xmedia-33//w/1920/IMAGE-landscape-fill-910d5c3f-999c-43bc-b214-a8fea4fdc185-default_0.jpg?ts=1692027006626",
+        "genere"=> "uomo"
+    ],
+
+    [
+        "id"=> 4,
+        "nome" => "Occhiali Prada Symbole",
+        "prezzo" => "380$",
+        "materiali" => "",
+        "categoria"=> "accessori",
+        "foto"=> "https://static.zara.net/photos///contents/mkt/spots/aw23-north-man-bags/subhome-xmedia-32//w/1920/IMAGE-landscape-fill-41813f53-d043-46c0-9d1c-39fe3019b1a4-default_0.jpg?ts=1691750618487",
+        "genere"=> "uomo"
+    ],
+        
+       
+
     ];
 
 
@@ -137,7 +178,7 @@ return view('shop', ['cardmostrare'=> $this->prodotti,
 
 'mostraC'=> $this->categorie,
 'mostraG'=> $this->genere,
-'mostraSaldi'=> $this->saldi
+'mostraBanner'=> $this->banner
 ]
 );
 }
